@@ -9,7 +9,7 @@
 response = RestClient::Request.execute(
 method: :get,
 url: 'https://api.sygictravelapi.com/1.0/en/places/list?parents=city:186&level=poi&limit=100',
-headers: {}
+headers: {"x-api-key": ""}
 )
 
 JSON.parse(response)["data"]["places"].each do |place|
