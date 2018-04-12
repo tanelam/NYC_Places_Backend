@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :show]
   resources :places, only: [:index, :show]
+
+    post "/login", to: "auth#login"
+
 end
