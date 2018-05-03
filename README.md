@@ -1,25 +1,46 @@
-# README
+# NYC Places
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A friendly tour-guide to the city of New York for those that want to explore more or are new to the city. Ruby on Rails back-end, JavaScript and React front-end, incorporated a cuztomized API and requests to GoogleMaps and Yelp APIs.
 
-Things you may want to cover:
+* NYC Places Front-End Repo - https://github.com/tanelam/NYC_Places_Frontend
+* NYC Places Back-End Repo - https://github.com/tanelam/NYC_Places_Backend
 
-* Ruby version
+![alt text](https://github.com/tanelam/NYC_Places_Frontend/blob/master/screenshot.jpg)
 
-* System dependencies
+## How To Use
+ 
+ * Navigate to http://localhost:3000/nycplaces in your browser.
+ * See all the places available or choose one category from the dropdown.
+ * Click on the picture of the place that interests you.
+ * In the place page, you can see more pictures of the place using the arrows on the border of the photo.
+ * Check out some of the events going on close to that place.
+ * Look at the most rated restaurants and food options close by.
+ * If you like an event or a resturant you can click on it and you will be redirected to its Yelp page. 
 
-* Configuration
+## Prerequisites
 
-* Database creation
+* Ruby v5.1.4
+* PostgreSQL 10
+* React
 
-* Database initialization
+## Back-End Setup
 
-* How to run the test suite
+1. Clone this repo - https://github.com/tanelam/NYC_Places_Backend
+2. Install Gems `bundle install`
+3. Set up Database `rake db:create`, then run rake `db:migrate`
+4. Seed Database `rake db:seed`
+5. Start your server `rails s -p 8000`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Front-End Setup
 
-* Deployment instructions
+1. Clone this repo - https://github.com/tanelam/NYC_Places_Frontend
+2. Install Dependencies `npm install` or `yarn install`
+3. Start your server `npm start` or `yarn start`
 
-* ...
-# NYC_Places_Backend
+## In Your Browser
+
+Navigate to the web address of your server http://localhost:3000 (or whatever yours is), and add the endpoint `/nycplaces`
+
+## Cotributors
+
+[Tania Aparicio](https://github.com/tanelam)
